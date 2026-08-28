@@ -1,3 +1,0 @@
-# Wezzie Kumwenda
-
-## Analytics Portfolio
