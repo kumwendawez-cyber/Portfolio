@@ -16,6 +16,41 @@ Professional: Problem-solving, attention to detail, communication, collaboration
  
  Featured Projects
  What I Can Do
+ ### Administrative Assistant
+**aQysta Irrigation Limited, Malawi**  
+June 2024 – January 2025
+Supported daily administrative and operational activities in a fast-paced work environment. Assisted with organizing records, coordinating schedules, and maintaining accurate documentation
+### Finance & Project Administrator
+**Inter-aide Operations & Maintenance Systems Project, Malawi**  
+June 2020 – March 2023
+Managed financial and operational data collection, integration, and analysis from multiple sources to support reporting and coordinated administrative and operational activities across multiple project teams
+ ### Field Facilitator — Volunteer
+**Ministry of Hope, Malawi**  
+supported community program coordination and reporting activities. Assisted with field data collection and stakeholder engagement, contributing to program effectiveness. 
  Education
+### Master of Science in Analytics
+**Saint Louis University — St. Louis, Missouri**  
+Expected December 2026
+**Relevant Coursework & Areas of Study:**
+- Applied Statistical Modeling
+- Applied Machine Learning
+- Predictive Modeling
+- Bayesian Analysis
+- Information Visualization
+- Organizational Decision-Makin
+### Master of Business Administration (MBA)
+European University of Lefke 
+January 2020
+
+### Bachelor of Business Administration
+Exploits University  
+2014 
+ 
  Resume
+ [View My Resume](resume/Wezzie_Kumwenda_Resume.pdf)
  Contact
+ I am open to opportunities in analytics, data analysis, business analytics, and related fields.
+
+- **Email:** your-email@example.com
+- **LinkedIn:** [My LinkedIn](YOUR-LINKEDIN-LINK)
+- **GitHub:** [My GitHub](https://github.com/kumwendawez-cyber)
