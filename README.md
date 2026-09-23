@@ -160,6 +160,6 @@ January 2020
 
 I am open to opportunities in analytics, data analysis, business analytics, project analysis, program analysis, billing analysis, healthcare analytics, operations, and related fields.
 
-- **Email:** kumwendawez@gmail.com
+- **Email:** your-email@example.com
 - **LinkedIn:** [My LinkedIn](YOUR-LINKEDIN-LINK)
-- **GitHub:** [My GitHub](https://github.com/kumwendawez-cyber)
+- **GitHub:** [My GitHub](https://github.com/kumwendawez-cyber)endawez-cyber)
