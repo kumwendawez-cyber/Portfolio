@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,602 +7,574 @@
     <title>Wezzie Kumwenda | Analytics Portfolio</title>
 
     <style>
-
-        /* GENERAL */
-
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
         }
 
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            background: #f5f7fa;
+            background-color: #f4f6f8;
             color: #333;
             line-height: 1.6;
         }
 
-        .portfolio {
+        .container {
             display: flex;
             min-height: 100vh;
         }
 
-
-        /* LEFT PROFILE SECTION */
-
-        .profile {
-            width: 32%;
-            background: #1f2937;
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background-color: #252a30;
             color: white;
-            padding: 60px 40px;
-            text-align: center;
+            padding: 30px 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
         }
-
-
-        /* PROFILE PICTURE */
 
         .profile-picture {
             width: 160px;
             height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 25px;
-            border: 4px solid white;
+            display: block;
+            margin: 0 auto 20px auto;
         }
 
-
-        /* PROFILE NAME */
-
-        .profile h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .profile .title {
-            font-size: 18px;
+        .sidebar h1 {
+            text-align: center;
+            font-size: 24px;
             margin-bottom: 25px;
         }
 
-        .profile .description {
-            font-size: 15px;
-            margin-bottom: 30px;
-        }
-
-
-        /* PROFILE LINKS */
-
-        .profile-links a {
+        .sidebar nav a {
             display: block;
             color: white;
             text-decoration: none;
-            margin: 12px 0;
+            padding: 10px 5px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #444;
         }
 
-        .profile-links a:hover {
-            text-decoration: underline;
+        .sidebar nav a:hover {
+            background-color: #343a40;
         }
 
-
-        /* RIGHT CONTENT SECTION */
-
-        .content {
-            width: 68%;
-            padding: 60px;
-            background: white;
+        /* Main content */
+        .main-content {
+            margin-left: 260px;
+            padding: 40px;
+            max-width: 1100px;
+            width: 100%;
         }
 
         section {
-            margin-bottom: 45px;
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         h2 {
-            font-size: 25px;
-            margin-bottom: 15px;
-            color: #1f2937;
+            color: #252a30;
             border-bottom: 2px solid #ddd;
             padding-bottom: 8px;
+            margin-top: 0;
         }
 
-        p {
-            font-size: 16px;
-        }
-
-
-        /* SKILLS */
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .skill {
-            background: #e5e7eb;
-            padding: 8px 14px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
-
-
-        /* EXPERIENCE & EDUCATION */
-
-        .experience,
-        .education {
-            margin-bottom: 20px;
-        }
-
-        .experience h3,
-        .education h3 {
+        h3 {
+            color: #333;
             margin-bottom: 5px;
         }
 
-        .date {
-            font-size: 14px;
-            color: #666;
+        .project {
+            margin-bottom: 40px;
         }
 
+        .project:last-child {
+            margin-bottom: 0;
+        }
 
-        /* MOBILE */
+        .project-image {
+            width: 100%;
+            max-width: 900px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
 
-        @media (max-width: 800px) {
+        .skills-list {
+            padding-left: 20px;
+        }
 
-            .portfolio {
-                flex-direction: column;
-            }
+        .button {
+            display: inline-block;
+            background-color: #252a30;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
 
-            .profile,
-            .content {
+        .button:hover {
+            background-color: #444;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 10px;
+        }
+
+        .contact-list a {
+            color: #252a30;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
                 width: 100%;
+                height: auto;
             }
 
-            .profile {
-                padding: 40px 25px;
+            .container {
+                display: block;
             }
 
-            .content {
-                padding: 40px 25px;
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
             }
-
         }
-
     </style>
-
 </head>
-
 
 <body>
 
-<div class="portfolio">
+<div class="container">
 
+    <!-- Sidebar -->
+    <aside class="sidebar">
 
-    <!-- LEFT SIDE -->
-
-    <aside class="profile">
-
-        <!-- PROFILE PICTURE -->
-
-        <img 
-            src="profile pic.png" 
-            alt="Wezzie Kumwenda" 
-            class="profile-picture"
-        >
-
-
-        <!-- NAME -->
+        <!-- Profile Picture -->
+        <img src="20260207_113707.jpg"
+             alt="Wezzie Kumwenda"
+             class="profile-picture">
 
         <h1>Wezzie Kumwenda</h1>
 
-        <p class="title">
-            M.S. Analytics Student
-        </p>
-
-        <p class="description">
-            Data Analytics | Decision Support | Data Visualization
-        </p>
-
-
-        <!-- PROFILE LINKS -->
-
-        <div class="profile-links">
-
-            <a href="https://github.com/kumwendawez-cyber">
-                GitHub
-            </a>
-
-            <a href="| www.linkedin.com/in/wezzie-kumwenda-037837433  ">
-                LinkedIn
-            </a>
-
-            <a href="#">
-                Resume
-            </a>
-
-            <a href="mailto:YOUR-EMAIL-HERE">
-                Contact Me
-            </a>
-
-        </div>
+        <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#objective">Career / Portfolio Objective</a>
+            <a href="#skills">Technical Skills</a>
+            <a href="#tools">Tools & Technologies</a>
+            <a href="#projects">Featured Projects</a>
+            <a href="#experience">Professional Experience</a>
+            <a href="#education">Education</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
     </aside>
 
 
+    <!-- Main Content -->
+    <main class="main-content">
 
-    <!-- RIGHT SIDE -->
-
-    <main class="content">
-
-
-        <!-- INTRODUCTION -->
-
-        <section>
+        <!-- Introduction -->
+        <section id="introduction">
 
             <h2>Introduction</h2>
 
             <p>
-                I am currently pursuing a Master of Science in Analytics
-                at Saint Louis University. I hold a Bachelor's degree in
-                Business Administration and an MBA. I have professional
-                experience in administration, finance, and project
-                coordination, and I am developing my skills in data
-                analytics and decision support.
+                My name is Wezzie Kumwenda, and I am currently pursuing a
+                Master of Science in Analytics at Saint Louis University.
+                I hold a Bachelor's degree in Business Administration and
+                an MBA.
+            </p>
+
+            <p>
+                I have professional experience in administration, finance,
+                and project coordination, where I developed skills in
+                reporting, data management, financial tracking, and
+                problem-solving. Through my graduate studies, I am developing
+                my expertise in data analytics, data visualization,
+                statistical analysis, and decision support, with the goal
+                of using data to help organizations make informed decisions.
             </p>
 
         </section>
 
 
+        <!-- Career / Portfolio Objective -->
+        <section id="objective">
 
-        <!-- OBJECTIVE -->
-
-        <section>
-
-            <h2>Objective</h2>
+            <h2>Career / Portfolio Objective</h2>
 
             <p>
                 The objective of this portfolio is to showcase analytics
-                projects completed through my graduate coursework and
-                demonstrate my developing skills in data analysis,
-                statistical analysis, data visualization, SQL, Power BI,
-                and Excel. It also reflects my interest in pursuing a
-                professional career in analytics, where I can apply my
-                academic knowledge to real-world problems, continue
-                developing my analytical skills, and contribute to
-                data-driven decision-making.
+                projects I have completed through my graduate coursework
+                and independent practice. It demonstrates my developing
+                skills in data analysis, statistical analysis, data
+                visualization, SQL, Power BI, and Excel.
+            </p>
+
+            <p>
+                This portfolio also reflects my interest in pursuing a
+                professional career in analytics, including project,
+                program, billing, healthcare, operations, business, and
+                data-related roles.
             </p>
 
         </section>
 
 
+        <!-- Technical Skills -->
+        <section id="skills">
 
-        <!-- SKILLS -->
+            <h2>Technical Skills</h2>
 
-        <section>
+            <h3>Financial & Administrative</h3>
 
-            <h2>Skills & Tools</h2>
-
-            <div class="skills">
-
-                <span class="skill">Excel</span>
-                <span class="skill">SQL</span>
-                <span class="skill">Power BI</span>
-                <span class="skill">Python</span>
-                <span class="skill">R</span>
-                <span class="skill">SPSS</span>
-                <span class="skill">Data Analysis</span>
-                <span class="skill">Data Visualization</span>
-                <span class="skill">Statistical Analysis</span>
-                <span class="skill">Predictive Analytics</span>
-
-            </div>
-
-        </section>
+            <ul class="skills-list">
+                <li>Financial reconciliation</li>
+                <li>Financial reporting</li>
+                <li>Expense monitoring</li>
+                <li>Budget tracking</li>
+                <li>Data entry</li>
+                <li>Administrative support</li>
+                <li>Project coordination</li>
+            </ul>
 
 
+            <h3>Data & Analytics</h3>
 
-        <!-- EDUCATION -->
-
-        <section>
-
-            <h2>Education</h2>
-
-            <div class="education">
-
-                <h3>Master of Science in Analytics</h3>
-
-                <p>
-                    Saint Louis University
-                </p>
-
-                <p class="date">
-                    Expected December 2026
-                </p>
-
-            </div>
+            <ul class="skills-list">
+                <li>Data analysis</li>
+                <li>Data cleaning</li>
+                <li>Statistical analysis</li>
+                <li>Data validation</li>
+                <li>Reporting</li>
+                <li>Data visualization</li>
+                <li>Decision support</li>
+            </ul>
 
 
-            <div class="education">
+            <h3>Professional</h3>
 
-                <h3>Master of Business Administration (MBA)</h3>
-                
-                 <p>
-                    European University of Lefke
-                </p>
-
-                <p class="date">
-                    January 2020
-                </p>
-
-            </div>
-
-
-            <div class="education">
-
-                <h3>Bachelor's Degree in Business Administration</h3>
-
-                 <p>
-                    Eploits University
-                </p>
-
-                <p class="date">
-                    January 2016
-                </p>
-
-            </div>
+            <ul class="skills-list">
+                <li>Problem-solving</li>
+                <li>Attention to detail</li>
+                <li>Communication</li>
+                <li>Collaboration</li>
+                <li>Organization</li>
+                <li>Workflow management</li>
+            </ul>
 
         </section>
 
 
+        <!-- Tools -->
+        <section id="tools">
 
-        <!-- PROFESSIONAL EXPERIENCE -->
+            <h2>Tools & Technologies</h2>
 
-        <section>
-
-            <h2>Professional Experience</h2>
-
-            <div class="experience">
-
-                <h3>Administrative Assistant</h3>
-
-                <p>
-                    aQysta Irrigation Limited
-                </p>
-
-                <p class="date">
-                    June 2024 – January 2025
-                </p>
-
-            </div>
-
-
-            <div class="experience">
-
-                <h3>Finance & Project Administrator</h3>
-
-                <p>
-                    Inter-aide Operations & Maintenance Systems Project
-                </p>
-
-                <p class="date">
-                    June 2020 – March 2023
-                </p>
-
-            </div>
-
-
-            <div class="experience">
-
-                <h3>Field Facilitator — Volunteer</h3>
-
-                <p>
-                    Ministry of Hope
-                </p>
-
-                <p class="date">
-                    2016 – 2017
-                </p>
-
-            </div>
+            <p>
+                Excel, Power BI, SQL, R/RStudio, SPSS, Microsoft Access,
+                and Diame Accounting System.
+            </p>
 
         </section>
 
 
-
-        <!-- FEATURED PROJECTS -->
-
-        <section>
+        <!-- Featured Projects -->
+        <section id="projects">
 
             <h2>Featured Projects</h2>
 
-            <!-- PROJECT 1 -->
 
+            <!-- Financial Analysis Project -->
             <div class="project">
 
-                <h3>
-                    U.S. EV Charging Infrastructure:
-                    Strategic Investment & Expansion Roadmap
-                </h3>
+                <h3>Financial Data Analysis Dashboard</h3>
 
-
-                <p class="project-tools">
-                    Team 13 | Power BI | Data Analysis |
+                <p>
+                    <strong>Tools:</strong>
+                    Microsoft Excel | Financial Analysis |
                     Data Visualization
                 </p>
 
-
-                <!-- DASHBOARD SCREENSHOT -->
-
-                <img
-                    src="EV_Charging_Dashboard_Portfolio.png"
-                    alt="U.S. EV Charging Infrastructure Strategic Investment and Expansion Roadmap Power BI Dashboard"
-                    class="EV_Charging_Dashboard_Portfolio.png"
-                >
-
-
                 <p>
-                    This team-based final project involved developing
-                    an interactive Power BI dashboard to analyze and
-                    visualize alternative fueling infrastructure,
-                    population, and geographic data across U.S. states.
+                    This project focuses on analyzing financial performance
+                    using revenue, expenses, budgets, profit, profit margin,
+                    and budget variance.
                 </p>
 
-
                 <p>
-                    The dashboard combines data from the U.S. Census
-                    Bureau and the U.S. Department of Energy's
-                    Alternative Fuels Data Center to explore trends
-                    in alternative fueling stations and differences
-                    across states.
+                    The project involved organizing and cleaning financial
+                    data, performing financial calculations, identifying
+                    differences between actual expenses and budgeted amounts,
+                    and creating an Excel dashboard to present key financial
+                    information in a clear and visual format.
                 </p>
 
-
-
-                <!-- DATA SOURCES -->
-
-                <div class="project-subtitle">
-                    Data Sources
-                </div>
-
-                <ul>
-
-                    <li>
-                        U.S. Census Bureau — U.S. State Area Data
-                    </li>
-
-                    <li>
-                        Alternative Fuels Data Center (AFDC) —
-                        Historical Alternative Fueling Station Counts
-                    </li>
-
-                    <li>
-                        U.S. Census Bureau — U.S. Population Estimates
-                    </li>
-
-                </ul>
-
-
-
-                <!-- DASHBOARD FEATURES -->
-
-                <div class="project-subtitle">
-                    Dashboard Features
-                </div>
-
-                <ul>
-
-                    <li>
-                        Interactive Power BI visualizations
-                    </li>
-
-                    <li>
-                        State-level filtering using slicers
-                    </li>
-
-                    <li>
-                        Cross-filtering between visuals
-                    </li>
-
-                    <li>
-                        Dashboard navigation
-                    </li>
-
-                    <li>
-                        Reset filters functionality
-                    </li>
-
-                    <li>
-                        Data-driven infrastructure analysis
-                    </li>
-
-                </ul>
-
-
-
-                <!-- TARGET AUDIENCE -->
-
-                <div class="project-subtitle">
-                    Target Audience
-                </div>
-
-                <ul>
-
-                    <li>
-                        State Department of Transportation
-                        Infrastructure Planners
-                    </li>
-
-                    <li>
-                        Private EV Infrastructure Strategy Managers
-                    </li>
-
-                    <li>
-                        Environmental Policymakers
-                    </li>
-
-                </ul>
-
-
-
-                <!-- TEAM MEMBERS -->
-
-                <div class="project-subtitle">
-                    Team Members
-                </div>
-
-                <ul>
-
-                    <li>
-                        Adelaide Acquah
-                    </li>
-
-                    <li>
-                        Min-Ho Ku
-                    </li>
-
-                    <li>
-                        Wezzie Kumwenda
-                    </li>
-
-                    <li>
-                        Christabel Mudzengi
-                    </li>
-
-                </ul>
-
-
-
-                <!-- YOUR ROLE -->
-
                 <p>
-                    <strong>My Role:</strong>
-                    Team member contributing to the development
-                    of the final analytics project.
+                    The dashboard provides a practical view of financial
+                    performance and demonstrates how Excel can be used to
+                    support financial analysis and business decision-making.
                 </p>
 
+                <h4>Key Skills Demonstrated</h4>
+
+                <ul class="skills-list">
+                    <li>Financial data analysis</li>
+                    <li>Data cleaning and organization</li>
+                    <li>Revenue and expense analysis</li>
+                    <li>Profit calculation</li>
+                    <li>Profit margin analysis</li>
+                    <li>Budget variance analysis</li>
+                    <li>Excel formulas</li>
+                    <li>Data visualization</li>
+                    <li>Dashboard development</li>
+                </ul>
 
 
-                <!-- POWER BI LINK -->
+                <!-- Financial Dashboard Screenshot -->
+                <img src="financial-analysis-dashboard.png"
+                     alt="Financial Data Analysis Dashboard"
+                     class="project-image">
 
-                <a
-                    href="#"
-                    class="project-link"
-                    target="_blank"
-                >
-                    View Project
-                </a>
+
+                <h4>Project Highlights</h4>
+
+                <ul class="skills-list">
+                    <li>Analyzed revenue and expenses</li>
+                    <li>Calculated profit and profit margin</li>
+                    <li>Compared actual expenses with budget</li>
+                    <li>Examined spending across departments</li>
+                    <li>Used Excel formulas for financial calculations</li>
+                    <li>Created visual summaries and dashboard components</li>
+                    <li>Presented financial information for easier interpretation</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Customer Complaint Project -->
+            <div class="project">
+
+                <h3>
+                    Customer Complaint Prioritization and
+                    Resolution Decision-Support Tool
+                </h3>
+
+                <p>
+                    <strong>Tools:</strong>
+                    SQL | Data Analysis | Statistical Analysis |
+                    Predictive Modeling
+                </p>
+
+                <p>
+                    This project focuses on developing a decision-support
+                    approach to help financial institutions prioritize
+                    customer complaints based on urgency and other relevant
+                    characteristics.
+                </p>
+
+                <p>
+                    The project examines customer complaint information
+                    and explores how analytics can support managers in
+                    identifying complaints that may require faster attention
+                    and determining appropriate routing.
+                </p>
+
+                <h4>Key Skills Being Developed</h4>
+
+                <ul class="skills-list">
+                    <li>SQL</li>
+                    <li>Data preparation</li>
+                    <li>Data analysis</li>
+                    <li>Predictive modeling</li>
+                    <li>Statistical analysis</li>
+                    <li>Decision support</li>
+                    <li>Data visualization</li>
+                </ul>
 
             </div>
 
         </section>
 
+
+        <!-- Professional Experience -->
+        <section id="experience">
+
+            <h2>Professional Experience</h2>
+
+
+            <h3>Administrative Assistant</h3>
+
+            <p>
+                <strong>aQysta Irrigation Limited, Malawi</strong><br>
+                June 2024 – January 2025
+            </p>
+
+            <p>
+                Supported daily administrative and operational activities
+                in a fast-paced work environment. Assisted with organizing
+                records, coordinating schedules, maintaining accurate
+                documentation, tracking expenses, and supporting project
+                operations and reporting.
+            </p>
+
+
+            <h3>Finance & Project Administrator</h3>
+
+            <p>
+                <strong>
+                    Inter-aide Operations & Maintenance Systems Project, Malawi
+                </strong><br>
+                June 2020 – March 2023
+            </p>
+
+            <p>
+                Managed financial and operational data collection,
+                integration, and reporting from multiple sources. Supported
+                expense tracking, budget monitoring, financial reconciliation,
+                project reporting, and administrative coordination across
+                project teams.
+            </p>
+
+
+            <h3>Field Facilitator — Volunteer</h3>
+
+            <p>
+                <strong>Ministry of Hope, Malawi</strong><br>
+                2016 – 2017
+            </p>
+
+            <p>
+                Supported community program coordination and reporting
+                activities. Assisted with field data collection and
+                stakeholder engagement, contributing to program implementation
+                and reporting.
+            </p>
+
+        </section>
+
+
+        <!-- Education -->
+        <section id="education">
+
+            <h2>Education</h2>
+
+
+            <h3>Master of Science in Analytics</h3>
+
+            <p>
+                <strong>Saint Louis University — St. Louis, Missouri</strong><br>
+                Expected December 2026
+            </p>
+
+            <p><strong>Relevant Coursework & Areas of Study:</strong></p>
+
+            <ul class="skills-list">
+                <li>Applied Statistical Modeling</li>
+                <li>Applied Machine Learning</li>
+                <li>Predictive Modeling</li>
+                <li>Bayesian Analysis</li>
+                <li>Information Visualization</li>
+                <li>Organizational Decision-Making</li>
+            </ul>
+
+
+            <h3>Master of Business Administration (MBA)</h3>
+
+            <p>
+                <strong>European University of Lefke</strong><br>
+                January 2020
+            </p>
+
+
+            <h3>Bachelor of Business Administration</h3>
+
+            <p>
+                <strong>Exploits University</strong><br>
+                2016
+            </p>
+
+        </section>
+
+
+        <!-- Resume -->
+        <section id="resume">
+
+            <h2>Resume</h2>
+
+            <p>
+                You can view or download my current resume below.
+            </p>
+
+            <a href="resume/Wezzie_Kumwenda_Resume.pdf"
+               class="button"
+               target="_blank">
+                View My Resume
+            </a>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                I am open to opportunities in analytics, data analysis,
+                business analytics, project analysis, program analysis,
+                billing analysis, healthcare analytics, operations,
+                and related fields.
+            </p>
+
+            <ul class="contact-list">
+
+                <li>
+                    <strong>Email:</strong>
+                    kumwendawez@gmail.com
+                </li>
+
+                <li>
+                    <strong>LinkedIn:</strong>
+                    <a href="YOUR-LINKEDIN-LINK"
+                       target="www.linkedin.com/in/wezzie-kumwenda-037837433">
+                        My LinkedIn
+                    </a>
+                </li>
+
+                <li>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/kumwendawez-cyber"
+                       target="_blank">
+                        My GitHub
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
 
     </main>
 
 </div>
 
 </body>
-
 </html>
-Now you only have 2 things to do
-
-1. In GitHub, make sure these three files are
