@@ -72,7 +72,7 @@ The dashboard provides a practical view of financial performance and demonstrate
 - Data visualization
 - Dashboard development
 
-![Financial Analysis Dashboard](financial-analysis-dashboard.png)
+![Financial analysis dashboard.png]
 
 **Project Highlights:**
 - Analyzed revenue and expenses
